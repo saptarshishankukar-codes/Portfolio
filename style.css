@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  color: white;
+  overflow-x: hidden;
+  background: black;
+}
+
+/* Canvas Background */
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(10px);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Sections */
+section {
+  padding: 100px;
+  text-align: center;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Cards */
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  border: none;
+  background: cyan;
+  cursor: pointer;
+  border-radius: 5px;
+}
